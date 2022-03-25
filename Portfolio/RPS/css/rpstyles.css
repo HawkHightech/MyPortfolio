@@ -1,0 +1,117 @@
+body 
+{
+  font-family: georgia, arial, sans-serif;
+  background-color: black;
+  background-image: url("../imgs/rps.png");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 100%;
+  margin: 0px;
+  overflow: hidden;
+  color: white;
+}
+
+div.start
+{
+	height: 10em;
+    position: relative
+}
+
+div.start p
+{
+	margin: 0;
+	font-size: 50px;
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+div.iamge
+{
+	height: 10em;
+    position: relative
+}
+
+div.image img
+{
+	margin: 0;
+	font-size: 50px;
+    position: absolute;
+    top: 57%;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h1
+{
+  display: flex;
+  justify-content: center;
+}
+
+h4
+{
+  display: flex;
+  justify-content: center;
+}
+
+div
+{
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.selections
+{
+  display: flex;
+  justify-content: center;
+}
+
+.selection
+{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 5rem;
+  transition: 700ms;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.selection:hover
+{
+  transform: scale(1.5);
+}
+
+.results
+{
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.result-score
+{
+  margin-left: .5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.resultingOutcome
+{
+  opacity: .5;
+}
+
+.resultingOutcome.champ
+{
+  opacity: 1;
+  font-size: 2rem;
+}

@@ -1,0 +1,232 @@
+/* Code layout help from Lab Assignments */
+
+body
+{
+	font-family:georgia, arial, sans-serif;
+	background-color: black;
+	margin:0px; /*Gets rid of the natural margin around the browser window edges*/
+}
+
+#container
+{ /*A box that will contain the entire website for centering purposes*/
+	width:100%; /*The container will try to fill the entire browser window width*/
+	max-width:700px; /*the maximum width the container will grow to*/
+	margin:0px auto; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+	background-color: black;
+	padding:0px;
+	box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:row; /*row, row-reverse, column, column-reverse*/
+	align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+	align-items:stretch; /*flex-end, center, stretch, baseline*/
+}
+
+#containerForNav
+{ /*A box that will contain the entire website for centering purposes*/
+	width:100%; /*The container will try to fill the entire browser window width*/
+	max-width:800px; /*the maximum width the container will grow to*/
+	margin:0px auto; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+	background-color:black;
+	padding:0px;
+	color: white;
+	box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:row; /*row, row-reverse, column, column-reverse*/
+	align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+	align-items:stretch; /*flex-end, center, stretch, baseline*/
+	text-align:center;
+
+}
+
+#headerForHome
+{
+	background-image: url(../pics/backgroundForHome.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+	background-color:black;
+	color:white;
+	padding:150px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+}
+
+
+h1
+{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+nav
+{
+	width:100%;
+	background-color:black;
+	margin:15px auto;
+	padding:auto;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+}
+
+nav ul
+{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+
+}
+
+nav ul li
+{
+	display:inline-block;
+	margin:5px 30px;
+	background-color:black;
+	padding:10px;
+
+}
+
+nav a
+{
+	text-decoration:none;
+	color: white;
+
+}
+
+li a.active
+{
+  	color: lightskyblue;
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
+article
+{
+	width:100%;
+	background-color:black;
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+
+	/*The article needs its own flex properties since it contains sections 
+	which will be flexing*/
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:row; /*row, row-reverse, column, column-reverse*/
+	align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space-around*/
+	align-items:stretch; /*flex-end, center, stretch, baseline*/
+}
+
+.indexArticle
+{
+	margin-right: 20px;
+}
+
+.clubArticle
+{
+	margin-right: 50px;
+
+}
+
+.projectsArticle
+{
+	margin-right: 30px;
+}
+
+p
+{
+	color: white;
+	text-indent: 15px;
+}
+
+.fullwidth
+{
+	background-color: black;
+	color: white;
+	margin:2%;
+	width:96%;
+	padding:2%;
+	box-sizing:border-box;
+	text-align: center;
+}
+
+.halfwidth
+{
+	background-color: black;
+	margin:2%;
+	width:46%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.thirdwidth
+{
+	background-color: black;
+	margin:2%;
+	width:29.33333333%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.quarterwidth
+{
+	background-color: black;
+	margin:2%;
+	width:21%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.fifthwidth
+{
+	background-color: black;
+	margin:2%;
+	width:16%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.eighthwidth
+{
+	background-color: black;
+	margin:2%;
+	width:8.5%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+img
+{
+	max-width:100%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	border-radius: 20px;
+}
+
+.fullwidth > .rpsJPG
+{
+	max-width: 70%;
+	margin-left: 90px;
+}
+
+
+footer
+{
+	color: white;
+	text-align: center;
+	background-color:black;
+	width:100%;
+	max-width:800px;
+	margin:0px auto;
+	margin-left: 217px;
+}
+
